@@ -45,6 +45,12 @@
         {
             localStorage.setItem('currentuser',JSON.stringify(user));
             alert("Login successfully!!!");
+            let option=confirm("Do you want to start exam portal then click ok..");
+            if(option)
+            {
+            window.location.href="examapp.html";
+                
+            }
             window.location.href="bankapp.html";
             
         }
