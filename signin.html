@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BankApp|Signin</title>
+    <title>BankApp | Sign In</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signin.css">
 </head>
 <body>
-     <center>
-        <h1>SignIn Here</h1>
+    <main class="container">
+        <section class="hero">
+            <h1>Sign In Here</h1>
+            <p>Access your account and continue to the exam or bank portal.</p>
+        </section>
+
         <nav>
-            <a href="index.html">Home</a>
-            <a href="signup.html">SignUp</a>
+            <a href="index.html" class="secondary">Home</a>
+            <a href="signup.html">Sign Up</a>
         </nav>
+
         <hr>
+
         <form id="signinform">
-        <input type="email" placeholder="Enter email" id="uemail" required>
-        <br>
-        <input type="password" placeholder="Enter Password" id="upass" required>
-        <br><br>
-     
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear">
-        <a href="index.html"><input type="button"  value="Cancle"></a>
-
-
+            <input type="email" placeholder="Enter email" id="uemail" required>
+            <input type="password" placeholder="Enter password" id="upass" required>
+            <div class="actions">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+                <a href="index.html" class="btn secondary">Cancel</a>
+            </div>
         </form>
-
-    </center>
+    </main>
     <script>
         document.getElementById("signinform").addEventListener("submit",function(event)
     {

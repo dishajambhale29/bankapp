@@ -1,0 +1,16 @@
+.container {
+  max-width: 520px;
+}
+
+.hero p {
+  color: #1f4068;
+}
+
+input[type='email'],
+input[type='password'] {
+  background: #fbfdff;
+}
+
+.actions {
+  margin-top: 6px;
+}

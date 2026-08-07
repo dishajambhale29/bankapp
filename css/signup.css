@@ -1,0 +1,17 @@
+.container {
+  max-width: 520px;
+}
+
+form {
+  padding-top: 8px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  background: #fbfdff;
+}
+
+.actions {
+  margin-top: 6px;
+}

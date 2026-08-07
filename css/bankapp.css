@@ -1,0 +1,16 @@
+.container {
+  max-width: 560px;
+}
+
+form {
+  gap: 14px;
+}
+
+.output {
+  min-height: 3rem;
+  font-weight: 600;
+}
+
+.actions {
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}

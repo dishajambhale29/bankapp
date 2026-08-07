@@ -1,0 +1,15 @@
+.container {
+  max-width: 720px;
+}
+
+.hero {
+  padding-top: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+nav a {
+  min-width: 120px;
+}

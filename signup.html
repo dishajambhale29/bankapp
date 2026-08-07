@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BankApp|SignUp</title>
+    <title>BankApp | Sign Up</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <center>
-        <h1>Signup Here</h1>
+    <main class="container">
+        <section class="hero">
+            <h1>Sign Up Here</h1>
+            <p>Create a new account to access the bank and exam portals.</p>
+        </section>
+
         <nav>
-            <a href="index.html">Home</a>
-            <a href="signin.html">SignIn</a>
-
+            <a href="index.html" class="secondary">Home</a>
+            <a href="signin.html">Sign In</a>
         </nav>
+
         <hr>
+
         <form id="signupform">
-        <input type="text" placeholder="Enter username" id="uname" required>
-        <br>
-        <input type="email" placeholder="Enter email" id="uemail" required>
-        <br>
-        <input type="password" placeholder="Enter Password" id="upass" required>
-        <br>
-        <input type="password" placeholder="Enter Confirm Password" id="ucpass" required>
-        <br><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear">
-        <a href="index.html"><input type="button"  value="Cancle"></a>
-
-
+            <input type="text" placeholder="Enter username" id="uname" required>
+            <input type="email" placeholder="Enter email" id="uemail" required>
+            <input type="password" placeholder="Enter password" id="upass" required>
+            <input type="password" placeholder="Confirm password" id="ucpass" required>
+            <div class="actions">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+                <a href="index.html" class="btn secondary">Cancel</a>
+            </div>
         </form>
 
-    </center>
+    </main>
 
     <script>
         document.getElementById("signupform").addEventListener("submit",function(event)
