@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExamApp</title>
+    <title>Exam App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<center>
-    <h1>Welcome to exam portal</h1>
-    <nav>
-        <a href="index.html"><button>LogOut</button></a>
-    </nav>
-    <hr>
-</center>
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to the Exam Portal</h1>
+            <p>Answer the questions below and submit to see your score.</p>
+        </section>
+
+        <nav>
+            <a href="index.html" class="secondary">Log Out</a>
+        </nav>
+
+        <hr>
+
         <form id="examform">
             <label>Q.1 HTML is case sensitive language</label>
             <br><br>
@@ -31,8 +37,8 @@
 
             <br><br>
             <input type="submit" value="Submit">
-            <input type="reset" value="Cancle">
-            <h1 id="result"></h1>
+            <input type="reset" value="Cancel">
+            <div class="output" id="result"></div>
         </form>
 
         <script>

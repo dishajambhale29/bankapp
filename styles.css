@@ -1,0 +1,198 @@
+/* Shared responsive styles for the Bank App site */
+:root {
+  color-scheme: light;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ecf5ff;
+  color: #102a43;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #b3e5fc 0%, transparent 45%),
+    radial-gradient(circle at bottom right, #e0f7fa 0%, transparent 40%),
+    #f3fbff;
+  color: #102a43;
+}
+
+img,
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(100%, 760px);
+  margin: 24px auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(16, 42, 67, 0.08);
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(16, 42, 67, 0.08);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+nav a,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 11px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: #0b72d4;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+nav a:hover,
+.btn:hover {
+  background: #0958b8;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(11, 114, 212, 0.15);
+}
+
+nav a.secondary,
+.btn.secondary {
+  background: #ffffff;
+  color: #0b72d4;
+  border-color: #d9e8fb;
+}
+
+nav a.secondary:hover,
+.btn.secondary:hover {
+  background: #f8fbff;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #cddbf4;
+  background: #ffffff;
+  color: #102a43;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus {
+  outline: none;
+  border-color: #0b72d4;
+  box-shadow: 0 0 0 4px rgba(11, 114, 212, 0.12);
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+  cursor: pointer;
+  background: #0b72d4;
+  color: #fff;
+  border-color: transparent;
+}
+
+input[type='reset'],
+input[type='button'] {
+  background: #ffffff;
+  color: #0b72d4;
+  border: 1px solid #d9e8fb;
+}
+
+input[type='reset']:hover,
+input[type='button']:hover {
+  background: #f8fbff;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.output {
+  min-height: 2.5rem;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #eef7ff;
+  border: 1px solid #d9e8fb;
+  color: #0b3d6b;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d9e8fb;
+  margin: 22px 0;
+}
+
+@media (max-width: 620px) {
+  .container {
+    margin: 16px;
+    padding: 18px;
+  }
+
+  nav {
+    width: 100%;
+  }
+}
